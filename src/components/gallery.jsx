@@ -6,10 +6,9 @@ export const Gallery = (props) => {
     <div id="portfolio" className="text-center">
       <div className="container">
         <div className="section-title">
-          <h2>Gallery</h2>
+          <h2>Manufacture</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed
-            dapibus leonec.
+  Our advanced manufacturing unit is equipped with cutting-edge technology and modern machinery, enabling us to deliver high-quality products with precision and efficiency. From initial design to final production, every step is streamlined to maintain superior standards and meet diverse client needs.
           </p>
         </div>
         <div className="row">

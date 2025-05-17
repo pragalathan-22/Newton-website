@@ -1,100 +1,98 @@
 {
   "Header": {
-    "title": "We are a Landing Page",
-    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sed commodo nibh ante facilisis bibendum."
+    "title": "Tecnologies",
+    "paragraph": "Revolutionizing Food Service with Next-Gen Digital Kiosks & Interactive Standees"
   },
   "About": {
-    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "paragraph": "Welcome to Newtonsky5 Technology Private Limited — an advanced technology company shaping the future through innovation and excellence. We are a dedicated team of like-minded individuals driven by a shared vision of success. At Newtonsky5, we believe that our cutting-edge solutions have the potential to make a significant impact in the industry. We invite you to explore our website and discover how we're pushing the boundaries of what's possible. Because at Newtonsky5, we know that a company’s strength lies in the passion and talent of its people.",
     "Why": [
-      "Lorem ipsum dolor",
-      "Tempor incididunt",
-      "Lorem ipsum dolor",
-      "Incididunt ut labore"
+      "Expert team with industry experience",
+      "Customer-centric approach",
+      "Commitment to quality and excellence"
     ],
     "Why2": [
-      "Aliquip ex ea commodo",
-      "Lorem ipsum dolor",
-      "Exercitation ullamco",
-      "Lorem ipsum dolor"
+      "Reliable and scalable services",
+      "Focus on continuous improvement",
+      "Collaborative and transparent processes"
     ]
   },
   "Gallery": [
     {
-      "title": "Project Title",
+      "title": "Design Phase",
       "largeImage": "img/portfolio/01-large.jpg",
       "smallImage": "img/portfolio/01-small.jpg"
     },
     {
-      "title": "Project Title",
+      "title": "Laser Cutting",
       "largeImage": "img/portfolio/02-large.jpg",
       "smallImage": "img/portfolio/02-small.jpg"
     },
     {
-      "title": "Project Title",
+      "title": "Welding",
       "largeImage": "img/portfolio/03-large.jpg",
       "smallImage": "img/portfolio/03-small.jpg"
     },
     {
-      "title": "Project Title",
+      "title": "Surface Finishing",
       "largeImage": "img/portfolio/04-large.jpg",
       "smallImage": "img/portfolio/04-small.jpg"
     },
     {
-      "title": "Project Title",
+      "title": "Painting or Powder Coating",
       "largeImage": "img/portfolio/05-large.jpg",
       "smallImage": "img/portfolio/05-small.jpg"
     },
     {
-      "title": "Project Title",
+      "title": "Assembly",
       "largeImage": "img/portfolio/06-large.jpg",
       "smallImage": "img/portfolio/06-small.jpg"
     },
     {
-      "title": "Project Title",
+      "title": "Electrical & Software Setup",
       "largeImage": "img/portfolio/07-large.jpg",
       "smallImage": "img/portfolio/07-small.jpg"
     },
     {
-      "title": "Project Title",
+      "title": "Testing",
       "largeImage": "img/portfolio/08-large.jpg",
       "smallImage": "img/portfolio/08-small.jpg"
     },
     {
-      "title": "Project Title",
+      "title": "Final setup Installation",
       "largeImage": "img/portfolio/09-large.jpg",
       "smallImage": "img/portfolio/09-small.jpg"
     }
   ],
   "Services": [
     {
-      "icon": "fa fa-wordpress",
-      "name": "Lorem ipsum dolor",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "icon": "fa fa-mobile",
+      "name": "Mobile Application Development",
+      "text": "We create high-performance, scalable, and user-friendly mobile applications for Android and iOS platforms, tailored to meet your business goals."
     },
     {
-      "icon": "fa fa-cart-arrow-down",
-      "name": "Consectetur adipiscing",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "icon": "fa fa-globe",
+      "name": "Web Application Development",
+      "text": "Our team delivers secure, responsive, and feature-rich web applications that provide seamless user experiences across all devices and browsers."
     },
     {
-      "icon": "fa fa-cloud-download",
-      "name": "Lorem ipsum dolor",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "icon": "fa fa-plug",
+      "name": "IoT Device Integration",
+      "text": "From smart sensors to custom IoT hardware, we develop solutions that connect devices and bring your data to life for smarter decision-making."
     },
     {
-      "icon": "fa fa-language",
-      "name": "Consectetur adipiscing",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "icon": "fa fa-bolt",
+      "name": "SCO Application Development",
+      "text": "We specialize in developing custom SCO (Self-Checkout) applications that streamline retail operations and enhance customer satisfaction."
     },
     {
-      "icon": "fa fa-plane",
-      "name": "Lorem ipsum dolor",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "icon": "fa fa-pencil-square-o",
+      "name": "UI/UX Design",
+      "text": "Our design experts craft intuitive and engaging user interfaces that improve usability, accessibility, and the overall user experience."
     },
     {
-      "icon": "fa fa-pie-chart",
-      "name": "Consectetur adipiscing",
-      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."
+      "icon": "fa fa-cloud",
+      "name": "Cloud Solutions",
+      "text": "We offer scalable cloud infrastructure and deployment services to ensure high availability, performance, and security for your applications."
     }
   ],
   "Testimonials": [
@@ -152,7 +150,7 @@
     }
   ],
   "Contact": {
-    "address": "4321 California St, San Francisco, CA 12345 ",
+    "address": "4321 California St, San Francisco, CA 12345",
     "phone": "+1 123 456 1234",
     "email": "info@company.com",
     "facebook": "fb.com",
@@ -161,24 +159,70 @@
   },
   "Features": [
     {
-      "icon": "fa fa-comments-o",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+      "icon": "fa fa-cube",
+      "title": "Manufacturer",
+      "text": "Manufacturer textile’s weaving unit is fully equipped with sulzer, auto and power looms…"
     },
     {
-      "icon": "fa fa-bullhorn",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+      "icon": "fa fa-cogs",
+      "title": "Processing",
+      "text": "We manage our processing requirements to utilize specialized services…"
     },
     {
-      "icon": "fa fa-group",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+      "icon": "fa fa-wrench",
+      "title": "Fabrication",
+      "text": "We have been engaged with modern units for all our requirements of continuous bleach…"
     },
     {
-      "icon": "fa fa-magic",
-      "title": "Lorem ipsum",
-      "text": "Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam."
+      "icon": "fa fa-laptop",
+      "title": "Software",
+      "text": "We focus on continuous innovation and improvement in all aspects of our textile production."
+    }
+  ],
+  "Products": [
+    {
+      "title": "Touchscreen kiosk",
+      "id": "product1",
+      "subItems": [
+        { "title": "Information kiosk", "id": "info-kiosk" },
+        { "title": "Library kiosk", "id": "library-kiosk" },
+        { "title": "Feedback kiosk", "id": "feedback-kiosk" },
+        { "title": "Way finding kiosk", "id": "wayfinding-kiosk" }
+      ]
+    },
+    {
+      "title": "Digital standee",
+      "id": "product2",
+      "subItems": [
+        { "title": "Vertical digital standee", "id": "vertical-standee" },
+        { "title": "Digital signage", "id": "digital-signage" },
+        { "title": "Double side digital standee", "id": "double-side-standee" },
+        { "title": "A frames standee", "id": "a-frame-standee" }
+      ]
+    },
+    {
+      "title": "Interactive/Information Touch screen kiosk",
+      "id": "product3"
+    },
+    {
+      "title": "Multi touch screen Kiosk",
+      "id": "product4"
+    },
+    {
+      "title": "Self ordering Kiosk",
+      "id": "product5"
+    },
+    {
+      "title": "Interactive Touch Table",
+      "id": "product6"
+    },
+    {
+      "title": "Multi touch screen Table",
+      "id": "product7"
+    },
+    {
+      "title": "Mobile charging Kiosk",
+      "id": "product8"
     }
   ]
 }
