@@ -179,50 +179,90 @@
       "text": "We focus on continuous innovation and improvement in all aspects of our textile production."
     }
   ],
-  "Products": [
+"Products": [
     {
       "title": "Touchscreen kiosk",
-      "id": "product1",
+      "id": "touchscreen-kiosk",
+      "description": "Interactive kiosks designed for public access to digital content and services.",
       "subItems": [
-        { "title": "Information kiosk", "id": "info-kiosk" },
-        { "title": "Library kiosk", "id": "library-kiosk" },
-        { "title": "Feedback kiosk", "id": "feedback-kiosk" },
-        { "title": "Way finding kiosk", "id": "wayfinding-kiosk" }
+        {
+          "title": "Information kiosk",
+          "id": "info-kiosk",
+          "description": "Provides general information to users in public areas like malls, hospitals, and offices."
+        },
+        {
+          "title": "Library kiosk",
+          "id": "library-kiosk",
+          "description": "Facilitates self-check-in/out, catalog browsing, and account management in libraries."
+        },
+        {
+          "title": "Feedback kiosk",
+          "id": "feedback-kiosk",
+          "description": "Enables users to give instant feedback through touch inputs at service points."
+        },
+        {
+          "title": "Way finding kiosk",
+          "id": "wayfinding-kiosk",
+          "description": "Helps visitors navigate large spaces like campuses, airports, and malls with interactive maps."
+        }
       ]
     },
     {
       "title": "Digital standee",
-      "id": "product2",
+      "id": "digital-standee",
+      "description": "Freestanding digital displays used for advertisements, announcements, or promotional content.",
       "subItems": [
-        { "title": "Vertical digital standee", "id": "vertical-standee" },
-        { "title": "Digital signage", "id": "digital-signage" },
-        { "title": "Double side digital standee", "id": "double-side-standee" },
-        { "title": "A frames standee", "id": "a-frame-standee" }
+        {
+          "title": "Vertical digital standee",
+          "id": "vertical-standee",
+          "description": "Tall portrait-oriented displays ideal for lobbies and entrances."
+        },
+        {
+          "title": "Digital signage",
+          "id": "digital-signage",
+          "description": "Dynamic digital screens for broadcasting multimedia content across locations."
+        },
+        {
+          "title": "Double side digital standee",
+          "id": "double-side-standee",
+          "description": "Displays content on both sides to maximize visibility in high-traffic areas."
+        },
+        {
+          "title": "A frames standee",
+          "id": "a-frame-standee",
+          "description": "Foldable A-shaped digital signage for flexible and mobile promotions."
+        }
       ]
     },
     {
       "title": "Interactive/Information Touch screen kiosk",
-      "id": "product3"
+      "id": "interactive-kiosk",
+      "description": "Dual-purpose kiosk offering both interactive and informational functionality."
     },
     {
       "title": "Multi touch screen Kiosk",
-      "id": "product4"
+      "id": "multi-touch-kiosk",
+      "description": "Supports multi-user interaction with advanced multi-touch capabilities."
     },
     {
       "title": "Self ordering Kiosk",
-      "id": "product5"
+      "id": "self-ordering-kiosk",
+      "description": "Enables customers to place orders independently in restaurants, cafes, or retail stores."
     },
     {
       "title": "Interactive Touch Table",
-      "id": "product6"
+      "id": "touch-table",
+      "description": "Horizontal touchscreen table for collaborative tasks, gaming, or presentations."
     },
     {
       "title": "Multi touch screen Table",
-      "id": "product7"
+      "id": "multi-touch-table",
+      "description": "Advanced table with multi-user touch support for education, entertainment, or meetings."
     },
     {
       "title": "Mobile charging Kiosk",
-      "id": "product8"
+      "id": "mobile-charging-kiosk",
+      "description": "Secure stations for public mobile phone charging with optional locker systems."
     }
   ]
 }
