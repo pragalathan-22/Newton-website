@@ -130,22 +130,22 @@
   "Team": [
     {
       "img": "img/team/01.jpg",
-      "name": "John Doe",
+      "name": "Sugan",
       "job": "Director"
     },
     {
       "img": "img/team/02.jpg",
-      "name": "Mike Doe",
+      "name": "Poomani",
       "job": "Senior Designer"
     },
     {
       "img": "img/team/03.jpg",
-      "name": "Jane Doe",
+      "name": "null",
       "job": "Senior Designer"
     },
     {
       "img": "img/team/04.jpg",
-      "name": "Karen Doe",
+      "name": "Sandhiya",
       "job": "Project Manager"
     }
   ],
@@ -184,85 +184,330 @@
       "title": "Touchscreen kiosk",
       "id": "touchscreen-kiosk",
       "description": "Interactive kiosks designed for public access to digital content and services.",
+      "image": "/assets/touchscreen-kiosk.png",
+      "specs": {
+        "productName": "43‑inch Capacitive Touchscreen Kiosk",
+        "panel": {
+          "type": "LED",
+          "screenSize": "43 inch",
+          "resolution": "1920×1080",
+          "brightness": "350 cd/m²",
+          "contrastRatio": "1200:1",
+          "colorDepth": "16.7 M",
+          "viewingAngle": "178° (V) / 178° (H)",
+          "responseTime": "6 ms",
+          "serviceLife": "50 000 h"
+        },
+        "power": { "input": "AC 100–240 V, 50/60 Hz" },
+        "construction": {
+          "frameMaterial": "Aluminium alloy",
+          "backShellMaterial": "Sheet metal",
+          "availableColors": ["Black", "White", "Custom"]
+        },
+        "software": { "os": "Android / Windows", "cms": "Cloud CMS compatible" },
+        "brands": ["Hitsan", "Geestar", "OEM"]
+      },
       "subItems": [
         {
           "title": "Information kiosk",
           "id": "info-kiosk",
-          "description": "Provides general information to users in public areas like malls, hospitals, and offices."
+          "description": "Provides general information to users in public areas like malls, hospitals, and offices.",
+          "image": "/assets/info-kiosk.png",
+          "specs": {
+            "productName": "32‑inch Information Kiosk",
+            "panel": {
+              "type": "LED",
+              "screenSize": "32 inch",
+              "resolution": "1920×1080",
+              "brightness": "300 cd/m²",
+              "viewingAngle": "178° (V) / 178° (H)",
+              "serviceLife": "50 000 h"
+            },
+            "power": { "input": "AC 110–240 V" },
+            "construction": {
+              "frameMaterial": "Steel + tempered glass",
+              "availableColors": ["White", "Black"]
+            },
+            "software": { "cms": "Web‑based info manager" },
+            "brands": ["InfoMaster", "OEM"]
+          }
         },
         {
           "title": "Library kiosk",
           "id": "library-kiosk",
-          "description": "Facilitates self-check-in/out, catalog browsing, and account management in libraries."
+          "description": "Facilitates self-check‑in/out, catalog browsing, and account management in libraries.",
+          "image": "/assets/library-kiosk.png",
+          "specs": {
+            "productName": "Self‑Service Library Kiosk",
+            "panel": {
+              "type": "LED",
+              "screenSize": "27 inch",
+              "resolution": "1920×1080"
+            },
+            "power": { "input": "AC 100–240 V" },
+            "construction": {
+              "frameMaterial": "Powder‑coated steel",
+              "barcodeScanner": "2D QR / RFID"
+            },
+            "software": { "integration": "SIP2 / RFID middleware" },
+            "brands": ["BookFlow", "OEM"]
+          }
         },
         {
           "title": "Feedback kiosk",
           "id": "feedback-kiosk",
-          "description": "Enables users to give instant feedback through touch inputs at service points."
+          "description": "Enables users to give instant feedback through touch inputs at service points.",
+          "image": "/assets/feedback-kiosk.png",
+          "specs": {
+            "productName": "21.5‑inch Smile Feedback Kiosk",
+            "panel": { "type": "LED", "screenSize": "21.5 inch", "resolution": "1920×1080" },
+            "power": { "input": "AC 110–240 V" },
+            "construction": { "buttons": "Capacitive emoji buttons" },
+            "software": { "analytics": "Real‑time dashboard" },
+            "brands": ["HappyMeter", "OEM"]
+          }
         },
         {
           "title": "Way finding kiosk",
           "id": "wayfinding-kiosk",
-          "description": "Helps visitors navigate large spaces like campuses, airports, and malls with interactive maps."
+          "description": "Helps visitors navigate large spaces like campuses, airports, and malls with interactive maps.",
+          "image": "/assets/wayfinding-kiosk.png",
+          "specs": {
+            "productName": "49‑inch Way‑Finding Kiosk",
+            "panel": { "type": "LED", "screenSize": "49 inch", "resolution": "4K UHD" },
+            "power": { "input": "AC 100–240 V" },
+            "construction": { "orientation": "Portrait / landscape auto‑rotate" },
+            "software": { "maps": "Indoor navigation SDK" },
+            "brands": ["PathGuide", "OEM"]
+          }
         }
       ]
     },
+
     {
       "title": "Digital standee",
       "id": "digital-standee",
       "description": "Freestanding digital displays used for advertisements, announcements, or promotional content.",
+      "image": "/assets/digital-standee.png",
+      "specs": {
+        "productName": "55‑inch Slim Digital Standee",
+        "panel": {
+          "type": "LED",
+          "screenSize": "55 inch",
+          "resolution": "3840×2160",
+          "brightness": "400 cd/m²",
+          "contrastRatio": "1200:1",
+          "serviceLife": "60 000 h"
+        },
+        "power": { "input": "AC 100–240 V, 50/60 Hz" },
+        "construction": {
+          "frameMaterial": "Aluminium alloy",
+          "availableColors": ["Black", "Silver"]
+        },
+        "software": { "cms": "Cloud playlist scheduling" },
+        "brands": ["Hitsan", "OEM"]
+      },
       "subItems": [
         {
           "title": "Vertical digital standee",
           "id": "vertical-standee",
-          "description": "Tall portrait-oriented displays ideal for lobbies and entrances."
+          "description": "Tall portrait‑oriented displays ideal for lobbies and entrances.",
+          "image": "/assets/vertical-standee-55in.png",
+          "specs": {
+            "productName": "55‑inch Portrait Standee",
+            "panel": {
+              "type": "LED",
+              "screenSize": "55 inch",
+              "resolution": "3840×2160",
+              "brightness": "400 cd/m²"
+            },
+            "power": { "input": "AC 100–240 V" },
+            "construction": { "depth": "40 mm ultra‑slim" },
+            "software": { "cms": "HTML5 / video / image" },
+            "brands": ["Hitsan", "OEM"]
+          }
         },
         {
           "title": "Digital signage",
           "id": "digital-signage",
-          "description": "Dynamic digital screens for broadcasting multimedia content across locations."
+          "description": "Dynamic digital screens for broadcasting multimedia content across locations.",
+          "image": "/assets/digital-signage-32in.png",
+          "specs": {
+            "productName": "32‑inch Floor‑Stand LCD Advertising Digital Signage",
+            "panel": {
+              "type": "LED",
+              "screenSize": "32 inch",
+              "resolution": "1920×1080",
+              "brightness": "280–350 cd/m²",
+              "contrastRatio": "1200:1",
+              "colorDepth": "16.7 M",
+              "backlightUniformity": "≥ 70 %",
+              "viewingAngle": "178° (V) / 178° (H)",
+              "serviceLife": "60 000 h"
+            },
+            "power": { "input": "AC 100–240 V, 50/60 Hz" },
+            "construction": {
+              "frameMaterial": "Aluminium profile",
+              "backShellMaterial": "Sheet metal",
+              "availableColors": ["Silver", "Black", "Gold"]
+            },
+            "software": {
+              "cms": "Cloud‑based content management (images, videos, scrolling text, scheduling)"
+            },
+            "brands": ["Hitsan", "Geestar", "OEM"]
+          }
         },
         {
           "title": "Double side digital standee",
           "id": "double-side-standee",
-          "description": "Displays content on both sides to maximize visibility in high-traffic areas."
+          "description": "Displays content on both sides to maximize visibility in high‑traffic areas.",
+          "image": "/assets/double-side-standee-43in.png",
+          "specs": {
+            "productName": "43‑inch Dual‑Face Standee",
+            "panel": { "screenSize": "43 inch × 2", "resolution": "1920×1080" },
+            "power": { "input": "AC 110–240 V" },
+            "construction": { "thickness": "60 mm", "wheelBase": "Lockable castors" },
+            "software": { "cms": "Split‑screen dual output" },
+            "brands": ["Hitsan", "OEM"]
+          }
         },
         {
-          "title": "A frames standee",
+          "title": "A‑frame digital standee",
           "id": "a-frame-standee",
-          "description": "Foldable A-shaped digital signage for flexible and mobile promotions."
+          "description": "Foldable A‑shaped digital signage for flexible and mobile promotions.",
+          "image": "/assets/a-frame-standee-32in.png",
+          "specs": {
+            "productName": "32‑inch A‑Frame Digital Standee",
+            "application": "Indoor",
+            "panel": {
+              "type": "LED",
+              "screenSize": "32 inch",
+              "resolution": "1920×1080",
+              "pixelPitch": "0.49 mm × 0.49 mm",
+              "brightness": "280–350 cd/m²",
+              "contrastRatio": "1200:1 (panel) / 4000:1 (overall)",
+              "colorDepth": "16.7 M",
+              "backlightUniformity": "≥ 70 %",
+              "viewingAngle": "178° (V) / 178° (H)",
+              "responseTime": "6 ms",
+              "serviceLife": "60 000 h",
+              "backlight": "LED"
+            },
+            "power": { "input": "AC 100–240 V, 50/60 Hz" },
+            "construction": {
+              "frameMaterial": "HR/CR 1.6 mm sheet metal",
+              "backShellMaterial": "Cold‑rolled sheet metal",
+              "frontPanel": "High‑transparency toughened glass or acrylic",
+              "appearanceColors": ["Black", "Gold", "Custom"]
+            },
+            "mediaSupport": {
+              "pictureFormats": ["gif", "jpeg", "png", "bmp"],
+              "audioFormats": ["mp3", "wma"],
+              "videoFormats": ["avi", "mp4", "ts", "mkv", "wmv"]
+            },
+            "software": {
+              "cms": "Hitsan / Google Display compatible",
+              "polyvision": "Privacy glass optional"
+            },
+            "warranty": "1 year",
+            "afterSalesService": ["Video technical support", "Online support"],
+            "brands": ["Hitsan", "Google Display", "OEM"]
+          }
         }
       ]
     },
+
     {
       "title": "Interactive/Information Touch screen kiosk",
       "id": "interactive-kiosk",
-      "description": "Dual-purpose kiosk offering both interactive and informational functionality."
+      "description": "Dual‑purpose kiosk offering both interactive and informational functionality.",
+      "image": "/assets/interactive-kiosk.png",
+      "specs": {
+        "productName": "42‑inch Interactive Info Kiosk",
+        "panel": { "type": "LED", "screenSize": "42 inch", "resolution": "1920×1080" },
+        "power": { "input": "AC 100–240 V" },
+        "construction": { "touch": "10‑point capacitive", "material": "Aluminium + steel" },
+        "software": { "os": "Windows / Android dual boot" },
+        "brands": ["InfoTouch", "OEM"]
+      }
     },
+
     {
       "title": "Multi touch screen Kiosk",
       "id": "multi-touch-kiosk",
-      "description": "Supports multi-user interaction with advanced multi-touch capabilities."
+      "description": "Supports multi‑user interaction with advanced multi‑touch capabilities.",
+      "image": "/assets/multi-touch-kiosk.png",
+      "specs": {
+        "productName": "55‑inch Multi‑Touch Kiosk",
+        "panel": { "screenSize": "55 inch", "resolution": "4K UHD", "touchPoints": "20" },
+        "power": { "input": "AC 110–240 V" },
+        "construction": { "glass": "Anti‑glare tempered", "stand": "Height adjustable" },
+        "software": { "sdk": "TUIO / Windows touch" },
+        "brands": ["TouchPro", "OEM"]
+      }
     },
+
     {
       "title": "Self ordering Kiosk",
       "id": "self-ordering-kiosk",
-      "description": "Enables customers to place orders independently in restaurants, cafes, or retail stores."
+      "description": "Enables customers to place orders independently in restaurants, cafes, or retail stores.",
+      "image": "/assets/self-ordering-kiosk.png",
+      "specs": {
+        "productName": "27‑inch Self‑Ordering Kiosk",
+        "panel": { "screenSize": "27 inch", "resolution": "1920×1080" },
+        "power": { "input": "AC 100–240 V" },
+        "construction": { "peripherals": "QR / NFC / Printer / POS" },
+        "software": { "pos": "Restaurant POS integration" },
+        "brands": ["FoodOrder", "OEM"]
+      }
     },
+
     {
       "title": "Interactive Touch Table",
       "id": "touch-table",
-      "description": "Horizontal touchscreen table for collaborative tasks, gaming, or presentations."
+      "description": "Horizontal touchscreen table for collaborative tasks, gaming, or presentations.",
+      "image": "/assets/touch-table.png",
+      "specs": {
+        "productName": "43‑inch Interactive Touch Table",
+        "panel": { "screenSize": "43 inch", "resolution": "4K UHD", "touchPoints": "20" },
+        "power": { "input": "AC 110–240 V" },
+        "construction": { "tableHeight": "760 mm", "surface": "Water‑resistant glass" },
+        "software": { "os": "Windows 11", "apps": "Whiteboard, games" },
+        "brands": ["CollabDesk", "OEM"]
+      }
     },
+
     {
       "title": "Multi touch screen Table",
       "id": "multi-touch-table",
-      "description": "Advanced table with multi-user touch support for education, entertainment, or meetings."
+      "description": "Advanced table with multi‑user touch support for education, entertainment, or meetings.",
+      "image": "/assets/multi-touch-table.png",
+      "specs": {
+        "productName": "55‑inch Multi‑Touch Table",
+        "panel": { "screenSize": "55 inch", "resolution": "4K UHD", "touchPoints": "40" },
+        "power": { "input": "AC 100–240 V" },
+        "construction": { "frame": "Aluminium", "surface": "IK08 tempered glass" },
+        "software": { "sdk": "Unity / React Native" },
+        "brands": ["EduTable", "OEM"]
+      }
     },
+
     {
       "title": "Mobile charging Kiosk",
       "id": "mobile-charging-kiosk",
-      "description": "Secure stations for public mobile phone charging with optional locker systems."
+      "description": "Secure stations for public mobile phone charging with optional locker systems.",
+      "image": "/assets/mobile-charging-kiosk.png",
+      "specs": {
+        "productName": "6‑Bay Mobile Charging Locker",
+        "capacity": "6 lockers",
+        "power": { "input": "AC 100–240 V", "output": "USB‑C / USB‑A 5 V 2.4 A" },
+        "construction": {
+          "material": "Powder‑coated steel",
+          "lock": "Digital PIN / RFID"
+        },
+        "software": { "monitoring": "Usage stats via cloud" },
+        "brands": ["ChargeSafe", "OEM"]
+      }
     }
   ]
 }

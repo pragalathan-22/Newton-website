@@ -912,31 +912,206 @@ label {
 }
 
 
-.products {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 0 -10px; /* negative margin to compensate padding */
+/* --- product grid --- */
+.products{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;          /* simpler than negative margins */
 }
 
-.product-item {
-  flex: 1 1 30%; /* default: 3 items per row */
-  margin: 10px;
-  box-sizing: border-box;
-  max-width: 30%;
+.product-item{
+  flex:1 1 calc(33.333% - 10px);   /* default 3‑per‑row with gap accounted */
+  max-width:calc(33.333% - 10px);
 }
 
-/* Mobile responsiveness */
-@media (max-width: 768px) {
-  .product-item {
-    flex: 1 1 45%; /* 2 items per row on tablets */
-    max-width: 45%;
+/* tablets */
+@media(max-width:768px){
+  .product-item{
+    flex:1 1 calc(50% - 10px);
+    max-width:calc(50% - 10px);
   }
 }
 
-@media (max-width: 480px) {
-  .product-item {
-    flex: 1 1 100%; /* full width on phones */
+/* phones */
+@media(max-width:480px){
+  .product-item{
+    flex:1 1 100%;
+    max-width:100%;
+  }
+}
+
+/* ========= DESKTOP (≥ 992 px) — hover opens menus ========= */
+@media (min-width: 992px) {
+  /* top‑level dropdown */
+  .navbar-nav > .dropdown:hover > .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  /* nested submenu */
+  .dropdown-submenu:hover > .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+}
+
+/* ========= TABLET & MOBILE (< 992 px) — hover disabled ========= */
+@media (max-width: 991px) {
+  /* cancel any hover‑triggered visibility */
+  .navbar-nav > .dropdown:hover > .dropdown-menu,
+  .dropdown-submenu:hover > .dropdown-menu {
+    opacity: 0 !important;
+    visibility: hidden !important;
+    transform: translateY(10px) !important;
+  }
+}
+  
+
+
+
+.wrapper {
+  margin-top: 8rem;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3rem 3.5rem;
+  background-color: #fff;
+  box-shadow: 0 8px 24px rgb(0 0 0 / 0.1);
+  border-radius: 16px;
+  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #212529;
+  line-height: 1.8;
+  font-size: 1.2rem;
+}
+
+.img {
+  width: 100%;
+  max-width: 480px;
+  border-radius: 16px;
+  margin-bottom: 40px;
+  box-shadow: 0 8px 24px rgb(0 0 0 / 0.12);
+  object-fit: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title {
+  font-size: 4.25rem;
+  font-weight: 700;
+  margin-bottom: 32px;
+  color: #222;
+  text-align: center;
+}
+
+.description {
+  font-size: 2rem;
+  line-height: 1.9;
+  margin-bottom: 48px;
+  color: #444;
+  text-align: center;
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sectionTitle {
+  margin-top: 4rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  font-size: 2.5rem;
+  border-bottom: 3px solid #0078d4;
+  padding-bottom: 10px;
+  color: #0078d4;
+}
+
+.subsectionTitle {
+  font-weight: 600;
+  font-size: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: #005ea2;
+}
+
+.list {
+  list-style-type: disc;
+  padding-left: 28px;
+  margin-bottom: 32px;
+  font-size: 1.5rem;
+  color: #555;
+  max-width: 600px;
+}
+
+.paragraph {
+  font-size: 1.5rem;
+  color: #555;
+  max-width: 600px;
+  margin-bottom: 32px;
+}
+
+.notFound {
+  margin-top: 8rem;
+  text-align: center;
+  color: #6c757d;
+  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  font-size: 3rem;
+}
+
+/* Mobile view */
+@media (max-width: 600px) {
+  .wrapper {
+    margin-top: 4rem;
+    padding: 2rem 1.5rem;
+    font-size: 1rem; /* smaller base font size */
+  }
+
+  .img {
     max-width: 100%;
+    margin-bottom: 24px;
+  }
+
+  .title {
+    font-size: 2.5rem;
+    margin-bottom: 24px;
+  }
+
+  .description {
+    font-size: 1.2rem;
+    margin-bottom: 32px;
+    max-width: 100%;
+  }
+
+  .sectionTitle {
+    font-size: 1.8rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    padding-bottom: 6px;
+  }
+
+  .subsectionTitle {
+    font-size: 1.4rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .list {
+    font-size: 1.1rem;
+    padding-left: 20px;
+    max-width: 100%;
+    margin-bottom: 24px;
+  }
+
+  .paragraph {
+    font-size: 1.1rem;
+    max-width: 100%;
+    margin-bottom: 24px;
+  }
+
+  .notFound {
+    font-size: 2rem;
+    margin-top: 4rem;
   }
 }
