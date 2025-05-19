@@ -260,6 +260,48 @@ header .intro-text {
   background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
 }
+
+@media (max-width: 600px) {
+  #features i.fa {
+    font-size: 28px;          /* smaller icon size */
+    width: 70px;              /* smaller width */
+    height: 70px;             /* smaller height */
+    padding: 15px 0;          /* less padding */
+    margin-bottom: 15px;      /* slightly smaller margin */
+  }
+
+  #features {
+    padding: 20px 10px;       /* add some padding around features section */
+  }
+
+  /* Optional: If features are in a row, stack them vertically */
+  #features .feature-item {
+    display: block;           /* or flex-direction: column if using flex */
+    margin-bottom: 30px;      /* space between items */
+    text-align: center;       /* center align text/icons */
+  }
+}
+@media (max-width: 600px) {
+  #features i.fa {
+    font-size: 28px;          /* smaller icon size */
+    width: 70px;              /* smaller width */
+    height: 70px;             /* smaller height */
+    padding: 15px 0;          /* less padding */
+    margin-bottom: 15px;      /* slightly smaller margin */
+  }
+
+  #features {
+    padding: 20px 10px;       /* add some padding around features section */
+  }
+
+  /* Optional: If features are in a row, stack them vertically */
+  #features .feature-item {
+    display: block;           /* or flex-direction: column if using flex */
+    margin-bottom: 30px;      /* space between items */
+    text-align: center;       /* center align text/icons */
+  }
+}
+
 /* About Section */
 #about {
   padding: 100px 0;
@@ -690,24 +732,29 @@ label {
 }
 
 /* Responsive fallback */
-@media (max-width: 768px) {
+/* Phone & tablet (collapsed navbar) -------------------------------- */
+@media (max-width: 767px) {
+
+  /* Make every dropdown behave like a simple block list */
   .navbar-nav > .dropdown .dropdown-menu,
   .dropdown-submenu .dropdown-menu {
-    position: relative !important;
-    top: auto !important;
-    left: auto !important;
-    transform: none !important;
-    opacity: 1 !important;
-    visibility: visible !important;
-    background-color: #f9f9f9;
-    border: none;
+    position: static;       /* sit in normal document flow   */
+    transform: none;        /* cancel any translate effects  */
+    opacity: 1;             /* always visible                */
+    visibility: visible;    /* always visible                */
+    background: #f9f9f9;    /* flat background               */
+    border: 0;              /* no border / shadow            */
     box-shadow: none;
-    max-width: none;
+    max-width: 100%;        /* fill the available width      */
+    padding: 0;             /* Bootstrap already adds padding*/
   }
+
+  /* Remove little ▶ arrows next to items that had sub‑menus */
   .dropdown-submenu > a::after {
-    content: "";
+    content: none;
   }
 }
+
 
 
 
@@ -912,62 +959,42 @@ label {
 }
 
 
-/* --- product grid --- */
-.products{
-  display:flex;
-  flex-wrap:wrap;
-  gap:10px;          /* simpler than negative margins */
-}
-
-.product-item{
-  flex:1 1 calc(33.333% - 10px);   /* default 3‑per‑row with gap accounted */
-  max-width:calc(33.333% - 10px);
-}
-
-/* tablets */
-@media(max-width:768px){
-  .product-item{
-    flex:1 1 calc(50% - 10px);
-    max-width:calc(50% - 10px);
-  }
-}
-
 /* phones */
-@media(max-width:480px){
+@media (max-width:480px){
+  .products{
+    display:block;          /* stack children vertically */
+    padding:0 8px;          /* a little side‑padding */
+  }
+
   .product-item{
-    flex:1 1 100%;
-    max-width:100%;
+    width:100% !important;  /* force full width */
+    max-width:100% !important;
+    margin-bottom:16px;     /* space between cards */
+  }
+
+  /* optional: card look */
+  .product-item > a,
+  .product-item > div{
+    display:block;
+    background:#fff;
+    border-radius:12px;
+    box-shadow:0 2px 8px rgba(0,0,0,.08);
+    overflow:hidden;
+    padding:16px 12px;
+  }
+
+  .product-item img{
+    width:100%;
+    height:auto;
+    display:block;
+    object-fit:cover;
+    margin-bottom:12px;
   }
 }
 
-/* ========= DESKTOP (≥ 992 px) — hover opens menus ========= */
-@media (min-width: 992px) {
-  /* top‑level dropdown */
-  .navbar-nav > .dropdown:hover > .dropdown-menu {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-  }
 
-  /* nested submenu */
-  .dropdown-submenu:hover > .dropdown-menu {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-  }
-}
 
-/* ========= TABLET & MOBILE (< 992 px) — hover disabled ========= */
-@media (max-width: 991px) {
-  /* cancel any hover‑triggered visibility */
-  .navbar-nav > .dropdown:hover > .dropdown-menu,
-  .dropdown-submenu:hover > .dropdown-menu {
-    opacity: 0 !important;
-    visibility: hidden !important;
-    transform: translateY(10px) !important;
-  }
-}
-  
+
 
 
 
