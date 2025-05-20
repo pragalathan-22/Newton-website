@@ -7,8 +7,7 @@ export const Services = (props) => {
         <div className="section-title">
           <h2>Our Services</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed
-            dapibus leonec.
+            We deliver end-to-end digital solutions from mobile apps and web development to IoT, SCO systems, UI/UX design, and cloud services.
           </p>
         </div>
         <div className="row">

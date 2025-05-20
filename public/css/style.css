@@ -482,23 +482,67 @@ header .intro-text {
   color: #666;
 }
 /* Team Section */
+/* Team Section */
 #team {
-  padding: 100px 0;
+  padding: 100px 15px; /* added horizontal padding for mobile */
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
+
 #team h4 {
   margin: 5px 0;
+  text-align: center;
 }
+
 #team .team-img {
-  width: 240px;
+  width: 100%;
+  max-width: 240px;  /* fixed max width */
+  height: 240px;     /* fixed height for same size */
+  object-fit: cover; /* cover crop to maintain aspect ratio */
+  border-radius: 8px; /* optional: rounded corners */
+  display: block;
+  margin: 0 auto;    /* center images */
 }
+
 #team .thumbnail {
   background: transparent;
   border: 0;
+  text-align: center;
+  padding: 15px;
+  box-sizing: border-box;
 }
+
 #team .thumbnail .caption {
   padding: 10px 0 0;
   color: #888;
+  font-size: 14px;
+  text-align: center;
 }
+
+/* Responsive Grid for team members */
+#team .team-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* spacing between team cards */
+}
+
+/* On smaller screens stack vertically */
+@media (max-width: 600px) {
+  #team {
+    padding: 60px 15px;
+  }
+  #team .team-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  #team .team-img {
+    max-width: 180px;
+    height: 180px;
+  }
+}
+
 /* Contact Section */
 #contact {
   padding: 100px 0 60px;
@@ -961,37 +1005,43 @@ label {
 
 /* phones */
 @media (max-width:480px){
-  .products{
-    display:block;          /* stack children vertically */
-    padding:0 8px;          /* a little side‑padding */
-  }
-
-  .product-item{
-    width:100% !important;  /* force full width */
-    max-width:100% !important;
-    margin-bottom:16px;     /* space between cards */
-  }
-
-  /* optional: card look */
-  .product-item > a,
-  .product-item > div{
-    display:block;
-    background:#fff;
-    border-radius:12px;
-    box-shadow:0 2px 8px rgba(0,0,0,.08);
-    overflow:hidden;
-    padding:16px 12px;
-  }
-
-  .product-item img{
-    width:100%;
-    height:auto;
-    display:block;
-    object-fit:cover;
-    margin-bottom:12px;
-  }
+  .products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
 }
 
+.product-item {
+  width: calc(33.333% - 16px); /* 3 items per row on larger screens */
+  max-width: 100%;
+  margin-bottom: 16px;
+}
+
+.product-item > a,
+.product-item > div {
+  display: block;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.08);
+  overflow: hidden;
+  padding: 16px 12px;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s ease;
+}
+
+.product-item:hover {
+  transform: translateY(-4px);
+}
+
+.product-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  margin-bottom: 12px;
+}
+}
 
 
 
@@ -1140,5 +1190,23 @@ label {
   .notFound {
     font-size: 2rem;
     margin-top: 4rem;
+  }
+}
+
+
+
+
+@media (min-width: 768px) {
+  /* Desktop: open dropdown on hover */
+  .navbar-nav > li.dropdown:hover > .dropdown-menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+  }
+  /* For submenu */
+  .dropdown-submenu:hover > .dropdown-menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
   }
 }

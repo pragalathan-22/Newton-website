@@ -7,10 +7,19 @@ const scroll = new SmoothScroll();
 export const Navigation = () => {
   const [openDropdown, setOpenDropdown] = useState(null);
   const [openSubmenu, setOpenSubmenu] = useState(null);
+  const [mobileNavOpen, setMobileNavOpen] = useState(false);
 
   const toggleDropdown = (name) => {
-    setOpenDropdown(openDropdown === name ? null : name);
-    setOpenSubmenu(null);
+    if (openDropdown === name) {
+      setOpenDropdown(null);
+      setOpenSubmenu(null);
+    } else {
+      setOpenDropdown(name);
+      setOpenSubmenu(null);
+    }
+    if (name === "mobileMenu") {
+      setMobileNavOpen(!mobileNavOpen);
+    }
   };
 
   const toggleSubmenu = (name) => {
@@ -21,8 +30,13 @@ export const Navigation = () => {
     e.preventDefault();
     const el = document.querySelector(target);
     if (el) scroll.animateScroll(el);
+    closeAllMenus();
+  };
+
+  const closeAllMenus = () => {
     setOpenDropdown(null);
     setOpenSubmenu(null);
+    setMobileNavOpen(false);
   };
 
   return (
@@ -33,9 +47,6 @@ export const Navigation = () => {
           <button
             type="button"
             className="navbar-toggle collapsed"
-            data-toggle="collapse"
-            data-target="#nav-collapse"
-            aria-expanded="false"
             onClick={() => toggleDropdown("mobileMenu")}
           >
             <span className="sr-only">Toggle navigation</span>
@@ -49,8 +60,7 @@ export const Navigation = () => {
             to="/"
             onClick={() => {
               scroll.animateScroll(0);
-              setOpenDropdown(null);
-              setOpenSubmenu(null);
+              closeAllMenus();
             }}
           >
             Newtonsky5
@@ -60,9 +70,7 @@ export const Navigation = () => {
         {/* Main nav */}
         <div
           id="nav-collapse"
-          className={`collapse navbar-collapse ${
-            openDropdown === "mobileMenu" ? "in" : ""
-          }`}
+          className={`collapse navbar-collapse ${mobileNavOpen ? "in" : ""}`}
         >
           <ul className="nav navbar-nav navbar-right">
             <li>
@@ -109,46 +117,22 @@ export const Navigation = () => {
                   </a>
                   <ul className="dropdown-menu">
                     <li>
-                      <Link
-                        to="/products/info-kiosk"
-                        onClick={() => {
-                          setOpenDropdown(null);
-                          setOpenSubmenu(null);
-                        }}
-                      >
+                      <Link to="/products/info-kiosk" onClick={closeAllMenus}>
                         Information kiosk
                       </Link>
                     </li>
                     <li>
-                      <Link
-                        to="/products/library-kiosk"
-                        onClick={() => {
-                          setOpenDropdown(null);
-                          setOpenSubmenu(null);
-                        }}
-                      >
+                      <Link to="/products/library-kiosk" onClick={closeAllMenus}>
                         Library kiosk
                       </Link>
                     </li>
                     <li>
-                      <Link
-                        to="/products/feedback-kiosk"
-                        onClick={() => {
-                          setOpenDropdown(null);
-                          setOpenSubmenu(null);
-                        }}
-                      >
+                      <Link to="/products/feedback-kiosk" onClick={closeAllMenus}>
                         Feedback kiosk
                       </Link>
                     </li>
                     <li>
-                      <Link
-                        to="/products/wayfinding-kiosk"
-                        onClick={() => {
-                          setOpenDropdown(null);
-                          setOpenSubmenu(null);
-                        }}
-                      >
+                      <Link to="/products/wayfinding-kiosk" onClick={closeAllMenus}>
                         Wayfinding kiosk
                       </Link>
                     </li>
@@ -169,80 +153,56 @@ export const Navigation = () => {
                   </a>
                   <ul className="dropdown-menu">
                     <li>
-                      <Link
-                        to="/products/vertical-standee"
-                        onClick={() => {
-                          setOpenDropdown(null);
-                          setOpenSubmenu(null);
-                        }}
-                      >
+                      <Link to="/products/vertical-standee" onClick={closeAllMenus}>
                         Vertical digital standee
                       </Link>
                     </li>
                     <li>
-                      <Link
-                        to="/products/digital-signage"
-                        onClick={() => {
-                          setOpenDropdown(null);
-                          setOpenSubmenu(null);
-                        }}
-                      >
+                      <Link to="/products/digital-signage" onClick={closeAllMenus}>
                         Digital signage
                       </Link>
                     </li>
                     <li>
-                      <Link
-                        to="/products/double-side-standee"
-                        onClick={() => {
-                          setOpenDropdown(null);
-                          setOpenSubmenu(null);
-                        }}
-                      >
+                      <Link to="/products/double-side-standee" onClick={closeAllMenus}>
                         Double side digital standee
                       </Link>
                     </li>
                     <li>
-                      <Link
-                        to="/products/a-frame-standee"
-                        onClick={() => {
-                          setOpenDropdown(null);
-                          setOpenSubmenu(null);
-                        }}
-                      >
-                        A‑frame standee
+                      <Link to="/products/a-frame-standee" onClick={closeAllMenus}>
+                        A-frame standee
                       </Link>
                     </li>
                   </ul>
                 </li>
 
-                {/* Remaining top-level products */}
+                {/* Other product links */}
                 <li>
-                  <Link to="/products/interactive-kiosk" onClick={() => setOpenDropdown(null)}>
+                  <Link to="/products/interactive-kiosk" onClick={closeAllMenus}>
                     Interactive / Information touchscreen kiosk
                   </Link>
                 </li>
                 <li>
-                  <Link to="/products/multi-touch-kiosk" onClick={() => setOpenDropdown(null)}>
-                    Multi‑touch screen kiosk
+                  <Link to="/products/multi-touch-kiosk" onClick={closeAllMenus}>
+                    Multi-touch screen kiosk
                   </Link>
                 </li>
                 <li>
-                  <Link to="/products/self-ordering-kiosk" onClick={() => setOpenDropdown(null)}>
-                    Self‑ordering kiosk
+                  <Link to="/products/self-ordering-kiosk" onClick={closeAllMenus}>
+                    Self-ordering kiosk
                   </Link>
                 </li>
                 <li>
-                  <Link to="/products/touch-table" onClick={() => setOpenDropdown(null)}>
+                  <Link to="/products/touch-table" onClick={closeAllMenus}>
                     Interactive touch table
                   </Link>
                 </li>
                 <li>
-                  <Link to="/products/multi-touch-table" onClick={() => setOpenDropdown(null)}>
-                    Multi‑touch screen table
+                  <Link to="/products/multi-touch-table" onClick={closeAllMenus}>
+                    Multi-touch screen table
                   </Link>
                 </li>
                 <li>
-                  <Link to="/products/mobile-charging-kiosk" onClick={() => setOpenDropdown(null)}>
+                  <Link to="/products/mobile-charging-kiosk" onClick={closeAllMenus}>
                     Mobile charging kiosk
                   </Link>
                 </li>
