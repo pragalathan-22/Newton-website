@@ -10,11 +10,10 @@ export const Services = (props) => {
             We deliver end-to-end digital solutions from mobile apps and web development to IoT, SCO systems, UI/UX design, and cloud services.
           </p>
         </div>
-        <div className="row">
+        <div className="services-grid">
           {props.data
             ? props.data.map((d, i) => (
-                <div key={`${d.name}-${i}`} className="col-md-4">
-                  {" "}
+                <div key={`${d.name}-${i}`} className="service-item">
                   <i className={d.icon}></i>
                   <div className="service-desc">
                     <h3>{d.name}</h3>

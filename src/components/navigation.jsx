@@ -9,22 +9,36 @@ export const Navigation = () => {
   const [openSubmenu, setOpenSubmenu] = useState(null);
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
 
-  const toggleDropdown = (name) => {
-    if (openDropdown === name) {
+const toggleDropdown = (name) => {
+  if (name === "mobileMenu") {
+    const newState = !mobileNavOpen;
+    setMobileNavOpen(newState);
+    if (!newState) {
       setOpenDropdown(null);
       setOpenSubmenu(null);
-    } else {
-      setOpenDropdown(name);
-      setOpenSubmenu(null);
     }
-    if (name === "mobileMenu") {
-      setMobileNavOpen(!mobileNavOpen);
-    }
-  };
+    return;
+  }
 
-  const toggleSubmenu = (name) => {
-    setOpenSubmenu(openSubmenu === name ? null : name);
-  };
+  // For desktop, toggle dropdown normally
+  if (openDropdown === name) {
+    setOpenDropdown(null);
+    setOpenSubmenu(null);
+  } else {
+    setOpenDropdown(name);
+    setOpenSubmenu(null);
+  }
+};
+
+const toggleSubmenu = (name) => {
+  // Toggle submenu
+  if (openSubmenu === name) {
+    setOpenSubmenu(null);
+  } else {
+    setOpenSubmenu(name);
+  }
+};
+
 
   const handleScroll = (e, target) => {
     e.preventDefault();
@@ -46,7 +60,8 @@ export const Navigation = () => {
         <div className="navbar-header">
           <button
             type="button"
-            className="navbar-toggle collapsed"
+            className={`navbar-toggle ${mobileNavOpen ? "" : "collapsed"}`}
+            aria-expanded={mobileNavOpen}
             onClick={() => toggleDropdown("mobileMenu")}
           >
             <span className="sr-only">Toggle navigation</span>
@@ -94,6 +109,7 @@ export const Navigation = () => {
               <a
                 href="#"
                 className="dropdown-toggle"
+                aria-expanded={openDropdown === "products"}
                 onClick={(e) => {
                   e.preventDefault();
                   toggleDropdown("products");
@@ -108,6 +124,7 @@ export const Navigation = () => {
                   <a
                     href="#"
                     className="dropdown-toggle"
+                    aria-expanded={openSubmenu === "touchscreen"}
                     onClick={(e) => {
                       e.preventDefault();
                       toggleSubmenu("touchscreen");
@@ -144,6 +161,7 @@ export const Navigation = () => {
                   <a
                     href="#"
                     className="dropdown-toggle"
+                    aria-expanded={openSubmenu === "digital"}
                     onClick={(e) => {
                       e.preventDefault();
                       toggleSubmenu("digital");
