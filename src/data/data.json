@@ -95,38 +95,38 @@
       "text": "We offer scalable cloud infrastructure and deployment services to ensure high availability, performance, and security for your applications."
     }
   ],
-  "Testimonials": [
-    {
-      "img": "img/testimonials/01.jpg",
-      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-      "name": "John Doe"
-    },
-    {
-      "img": "img/testimonials/02.jpg",
-      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-      "name": "Johnathan Doe"
-    },
-    {
-      "img": "img/testimonials/03.jpg",
-      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-      "name": "John Doe"
-    },
-    {
-      "img": "img/testimonials/04.jpg",
-      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-      "name": "Johnathan Doe"
-    },
-    {
-      "img": "img/testimonials/05.jpg",
-      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-      "name": "John Doe"
-    },
-    {
-      "img": "img/testimonials/06.jpg",
-      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-      "name": "Johnathan Doe"
-    }
-  ],
+ "Testimonials": [
+  {
+    "img": "img/testimonials/01.jpg",
+    "text": "\"The information kiosk helped us streamline visitor guidance at our hospital. It's intuitive and reduced our reception load significantly.\"",
+    "name": "Dr. Anjali Mehra, Apollo Hospital"
+  },
+  {
+    "img": "img/testimonials/02.jpg",
+    "text": "\"We installed self-ordering kiosks at our food court, and the wait times dropped by almost 40%. Our customers love the convenience.\"",
+    "name": "Rahul Bansal, FoodSquare Mall"
+  },
+  {
+    "img": "img/testimonials/03.jpg",
+    "text": "\"The touchscreen feedback kiosk makes it easy for us to gather real-time visitor insights. It’s simple, fast, and very effective.\"",
+    "name": "Ritika Shah, City Library"
+  },
+  {
+    "img": "img/testimonials/04.jpg",
+    "text": "\"We use the digital standees at our corporate events. The sleek design and dynamic content really grab attention.\"",
+    "name": "Vikram Singh, EventCraft"
+  },
+  {
+    "img": "img/testimonials/05.jpg",
+    "text": "\"Our wayfinding kiosk has transformed the navigation experience inside the shopping complex. Highly recommended!\"",
+    "name": "Neha Verma, Orion Mall"
+  },
+  {
+    "img": "img/testimonials/06.jpg",
+    "text": "\"We’ve seen a significant increase in engagement using interactive kiosks for promotions in our retail stores.\"",
+    "name": "Siddharth Kapoor, TrendStyle Retail"
+  }
+],
   "Team": [
     {
       "img": "img/team/01.jpg",
@@ -150,9 +150,9 @@
     }
   ],
   "Contact": {
-    "address": "4321 California St, San Francisco, CA 12345",
-    "phone": "+1 123 456 1234",
-    "email": "info@company.com",
+    "address": "Newtonsky5 Technology Pvt Ltd B1,Ground Floor,Rahamath mall, alagesan nagar, chengalpattu,ammanambakkam,tamil nadu 603002",
+    "phone": "+919894154436,+91701088691",
+    "email": "newtonsky5@gmail.com",
     "facebook": "fb.com",
     "twitter": "twitter.com",
     "youtube": "youtube.com"

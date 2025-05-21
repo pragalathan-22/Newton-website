@@ -47,11 +47,14 @@ const toggleSubmenu = (name) => {
     closeAllMenus();
   };
 
-  const closeAllMenus = () => {
+const closeAllMenus = () => {
+  setTimeout(() => {
     setOpenDropdown(null);
     setOpenSubmenu(null);
     setMobileNavOpen(false);
-  };
+  }, 100); // Adjust as needed
+};
+
 
   return (
     <nav id="menu" className="navbar navbar-default navbar-fixed-top">
